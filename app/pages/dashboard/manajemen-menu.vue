@@ -169,7 +169,7 @@ const deleteCategory = (category: string) => {
 
     <!-- Category Dialog -->
     <div v-if="showCategoryDialog" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-      <div class="bg-white rounded-2xl w-full max-w-sm shadow-xl relative overflow-hidden">>
+      <div class="bg-white rounded-2xl w-full max-w-sm shadow-xl relative overflow-hidden">
         <div class="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
           <h3 class="text-lg font-bold text-gray-800">Tambah Kategori</h3>
           <button @click="showCategoryDialog = false" class="text-gray-400 hover:text-gray-600">
@@ -181,7 +181,7 @@ const deleteCategory = (category: string) => {
             <label class="block text-sm font-medium text-gray-700 mb-1">Nama Kategori</label>
             <input v-model="newCategoryName" type="text" required class="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all" placeholder="Contoh: Kopi Series">
           </div>
-          <button type="submit" class="w-full py-2.5 px-4 rounded-xl font-medium text-white bg-orange-500 hover:bg-orange-600 transition-colors shadow-sm">>
+          <button type="submit" class="w-full py-2.5 px-4 rounded-xl font-medium text-white bg-orange-500 hover:bg-orange-600 transition-colors shadow-sm">
             Simpan Kategori
           </button>
         </form>
@@ -190,7 +190,7 @@ const deleteCategory = (category: string) => {
 
     <!-- Menu Dialog (Add/Edit) -->
     <div v-if="showMenuDialog" class="fixed inset-0 bg-black/40 z-50 flex items-center justify-center p-4 backdrop-blur-sm">
-      <div class="bg-white rounded-2xl w-full max-w-md shadow-xl relative overflow-hidden">>
+      <div class="bg-white rounded-2xl w-full max-w-md shadow-xl relative overflow-hidden">
         <div class="p-6 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
           <h3 class="text-lg font-bold text-gray-800">{{ isEditing ? 'Edit Menu' : 'Tambah Menu Baru' }}</h3>
           <button @click="showMenuDialog = false" class="text-gray-400 hover:text-gray-600">
@@ -221,7 +221,7 @@ const deleteCategory = (category: string) => {
             <button type="button" @click="showMenuDialog = false" class="flex-1 py-2.5 px-4 rounded-xl font-medium text-gray-600 bg-gray-100 hover:bg-gray-200 transition-colors">
               Batal
             </button>
-            <button type="submit" class="flex-1 py-2.5 px-4 rounded-xl font-medium text-white bg-green-600 hover:bg-green-700 transition-colors shadow-sm">>
+            <button type="submit" class="flex-1 py-2.5 px-4 rounded-xl font-medium text-white bg-green-600 hover:bg-green-700 transition-colors shadow-sm">
               Simpan
             </button>
           </div>

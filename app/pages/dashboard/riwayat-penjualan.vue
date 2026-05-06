@@ -104,7 +104,7 @@ const openHistoryDetail = (history: any) => {
                      class="flex items-center justify-between p-3 bg-white border border-gray-100 rounded-xl shadow-sm hover:shadow-md transition-shadow">
                   <div class="flex items-center gap-3">
                     <div class="w-8 h-8 rounded-full bg-gray-50 border border-gray-100 flex items-center justify-center text-xs font-bold text-gray-500">
-                      {{ index + 1 }}
+                      {{ Number(index) + 1 }}
                     </div>
                     <div>
                       <p class="font-semibold text-gray-800 text-sm">{{ item.name }}</p>
